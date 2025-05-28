@@ -54,8 +54,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/signUp").permitAll()
                 //остальные ссылки
+                //authenticated()
                 .antMatchers("/**").permitAll()
-
                 //проверка на роль
                 .antMatchers("/users").hasAnyAuthority("ADMIN")
                 //закончили

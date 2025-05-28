@@ -18,6 +18,7 @@ public class Lesson {
     private Long id;
 
     private String title;
+    private String date;
 
     @Column(length = 5000)
     private String content;

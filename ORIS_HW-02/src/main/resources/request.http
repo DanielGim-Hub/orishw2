@@ -1,0 +1,13 @@
+POST http://localhost:8080/lesson
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "English for beginners",
+  "date": "01-01-0001",
+  "content": "1001"
+}
+
+###
+
+#GET localhost:8080/lessons/search?page=0&size=3

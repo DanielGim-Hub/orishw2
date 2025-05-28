@@ -32,8 +32,8 @@ public class UserDto {
 
     }
     //для возрващения нескольких пользователей для того чтобы передать на фронт
-    public static List<UserDto> from(List<User> user) {
-        return user.stream().
+    public static List<UserDto> from(List<User> users) {
+        return users.stream().
                 map(UserDto::from).
                 collect(Collectors.toList());
     }
